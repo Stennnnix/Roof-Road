@@ -28,7 +28,7 @@ export default class HomeScreen extends React.Component {
                   ? require('../assets/images/logo.png')
                   : require('../assets/images/robot-prod.png')
               }
-              style={styles.welcomeImage}
+              style={styles.logoImage}
             />
           </View>
 
@@ -123,6 +123,15 @@ const styles = StyleSheet.create({
     marginTop: 3,
     marginLeft: -10,
   },
+
+  logoImage: {
+    width: 175,
+    height: 175,
+    resizeMode: 'contain',
+    marginTop: 3,
+    marginLeft: -10,
+  },
+
   getStartedContainer: {
     alignItems: 'center',
     marginHorizontal: 50,
