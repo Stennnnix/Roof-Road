@@ -37,8 +37,8 @@ export default class HomeScreen extends React.Component {
             <Text style={styles.getStartedText}>The only app...</Text>
 
             <Button
-  title="Learn More"
-  color="#841584"
+  title="Press me to start!"
+  color="#1CEE09"
 />
           </View>
           
