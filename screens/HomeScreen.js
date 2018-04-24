@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'react-native';
 import {
   Image,
   Platform,
@@ -35,9 +36,10 @@ export default class HomeScreen extends React.Component {
           <View style={styles.getStartedContainer}>
             <Text style={styles.getStartedText}>The only app...</Text>
 
-            <Text style={styles.getStartedText}>
-              (note to self: insert button here)
-            </Text>
+            <Button
+  title="Learn More"
+  color="#841584"
+/>
           </View>
           
         </ScrollView>
