@@ -8,6 +8,7 @@ import {
   Text,
   TouchableOpacity,
   View,
+  Alert,
 } from 'react-native';
 import { WebBrowser } from 'expo';
 
@@ -17,6 +18,10 @@ export default class HomeScreen extends React.Component {
   static navigationOptions = {
     header: null,
   };
+
+  _goToMainGame = () => {
+    this.props.navigation.navigate('MainGame')
+  }
 
   render() {
     return (
@@ -34,12 +39,13 @@ export default class HomeScreen extends React.Component {
           </View>
 
           <View style={styles.getStartedContainer}>
-            <Text style={styles.getStartedText}>The only app...</Text>
+            <Text style={styles.getStartedText}>The stock game for people who dont understand stocks</Text>
 
             <Button
-  title="Press me to start!"
-  color="#1CEE09"
-/>
+              onPress={this._goToMainGame}
+              title="Press me to start!"
+              color="#1CEE09"
+            />
           </View>
           
         </ScrollView>
